@@ -1,0 +1,5 @@
+Flask==1.0.2
+wtforms==2.2.1
+pandas==0.23.4
+sklearn==0.0
+numpy==1.16.1

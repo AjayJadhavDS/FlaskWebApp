@@ -1,0 +1,41 @@
+
+
+
+<style>
+.gridView{
+background-color: #eee;
+    display: grid;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+body{
+    background-color: #cec7c7;
+}
+form{
+    font-family: monospace;
+	
+}
+
+
+.result .sal{
+	font-size:20px;
+	color: #10b610;
+}
+
+</style>
+
+<div>
+<div class="gridView">
+<form method=post action="">
+ Enter the Experience in number of years  {{ form.r }}
+ <span class="query"> <input type=submit value=Predict style="font-family: monospace;"></span>
+ </br>
+ <div class="result">Salary is 	: <span class="sal">{% if s != None %}
+{{s[0]}} </span> <span>INR</span>
+{% endif %}</div>
+</form>
+</div>
+
+</div>
+
+
